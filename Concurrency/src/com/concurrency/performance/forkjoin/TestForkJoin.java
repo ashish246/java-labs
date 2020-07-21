@@ -1,0 +1,122 @@
+package com.concurrency.performance.forkjoin;
+
+import java.util.List;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * http://howtodoinjava.com/2014/05/27/forkjoin-framework-tutorial-forkjoinpool-
+ * example/
+ * 
+ * The Fork/Join framework was eventually included in Java 7.
+ * 
+ * Basically the Fork-Join breaks the task at hand into mini-tasks until the
+ * mini-task is simple enough that it can be solved without further breakups.
+ * It’s like a divide-and-conquer algorithm. One important concept to note in
+ * this framework is that ideally no worker thread is idle. They implement a
+ * work-stealing algorithm in that idle workers steal the work from those
+ * workers who are busy. Fork/Join deals with the threading hassles; you just
+ * indicate to the framework which portions of the work can be broken apart and
+ * handled recursively.
+ * 
+ * The main difference between the Fork/Join and the Executor frameworks is the
+ * work-stealing algorithm. Unlike the Executor framework, when a task is
+ * waiting for the finalization of the sub-tasks it has created using the join
+ * operation, the thread that is executing that task (called worker thread )
+ * looks for other tasks that have not been executed yet and begins its
+ * execution. By this way, the threads take full advantage of their running
+ * time, thereby improving the performance of the application.
+ * 
+ * There are some generally useful features in Java SE which are already
+ * implemented using the fork/join framework.
+ * 
+ * 1) One such implementation, introduced in Java SE 8, is used by the
+ * java.util.Arrays class for its parallelSort() methods. These methods are
+ * similar to sort(), but leverage concurrency via the fork/join framework.
+ * Parallel sorting of large arrays is faster than sequential sorting when run
+ * on multiprocessor systems.
+ * 
+ * 2) Parallelism used in Stream.parallel(). Read more about this parallel
+ * stream operation in java 8. Parallelism is the simultaneous execution of
+ * multiple threads/tasks via some combination of multiple processors and
+ * processor cores.
+ * 
+ * The fork/join framework is an implementation of the ExecutorService interface
+ * that helps you take advantage of multiple processors. It is designed for work
+ * that can be broken into smaller pieces recursively. The goal is to use all
+ * the available processing power to enhance the performance of your
+ * application.
+ * 
+ * As with any ExecutorService implementation, the fork/join framework
+ * distributes tasks to worker threads in a thread pool. The fork/join framework
+ * is distinct because it uses a work-stealing algorithm. Worker threads that
+ * run out of things to do can steal tasks from other threads that are still
+ * busy.
+ * 
+ * @author Administrator
+ * 
+ */
+public class TestForkJoin {
+	public static void main(String[] args) {
+		/*
+		 * The ForkJoinPool is basically a specialized implementation of
+		 * ExecutorService implementing the work-stealing algorithm.
+		 */
+		/*
+		 * ForkJoinPool pool = new ForkJoinPool(numberOfProcessors); Where
+		 * numberOfProcessors = Runtime.getRunTime().availableProcessors();
+		 */
+		/*
+		 * If you use a no-argument constructor, by default, it creates a pool
+		 * of size that equals the number of available processors obtained using
+		 * above technique. Another important difference compared to other
+		 * ExecutorService's is that this pool need not be explicitly shutdown
+		 * upon program exit because all its threads are in daemon mode.
+		 */
+		ForkJoinPool pool = new ForkJoinPool();
+		// Create three FolderProcessor tasks. Initialize each one with a
+		// different folder path.
+		FolderProcessor system = new FolderProcessor("C:\\Windows", "log");
+		FolderProcessor apps = new FolderProcessor("C:\\Program Files", "log");
+		FolderProcessor documents = new FolderProcessor(
+				"C:\\Documents And Settings", "log");
+		// Execute the three tasks in the pool using the execute() method.
+		pool.execute(system);
+		pool.execute(apps);
+		pool.execute(documents);
+		// Write to the console information about the status of the pool every
+		// second
+		// until the three tasks have finished their execution.
+		do {
+			System.out.printf("******************************************\n");
+			System.out.printf("Main: Parallelism: %d\n", pool.getParallelism());
+			System.out.printf("Main: Active Threads: %d\n",
+					pool.getActiveThreadCount());
+			System.out.printf("Main: Task Count: %d\n",
+					pool.getQueuedTaskCount());
+			System.out.printf("Main: Steal Count: %d\n", pool.getStealCount());
+			System.out.printf("******************************************\n");
+			try {
+				TimeUnit.SECONDS.sleep(1);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		} while ((!system.isDone()) || (!apps.isDone())
+				|| (!documents.isDone()));
+		// Shut down ForkJoinPool using the shutdown() method.
+		pool.shutdown();
+		// Write the number of results generated by each task to the console.
+		List<String> results;
+		results = system.join();
+		System.out.printf("System: %d files found.\n", results.size());
+		results = apps.join();
+		System.out.printf("Apps: %d files found.\n", results.size());
+		results = documents.join();
+		System.out.printf("Documents: %d files found.\n", results.size());
+	}
+}
+/*
+ * The Fork/Join library introduced in Java 7 extends the existing Java
+ * concurrency package with support for hardware parallelism, a key feature of
+ * multicore systems.
+ */

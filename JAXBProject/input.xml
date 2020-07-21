@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+    <UNMAPPED_ELEMENT_1/>
+    <name>Jane Doe</name>
+    <!-- COMMENT #1 -->
+    <address>
+        <UNMAPPED_ELEMENT_2/>
+        <street>1 A Street</street>
+        <!-- COMMENT #2 -->
+        <UNMAPPED_ELEMENT_3/>
+        <city>Any Town</city>
+    </address>
+    <!-- COMMENT #3 -->
+    <UNMAPPED_ELEMENT_4/>
+    <phone-number type="home">555-HOME</phone-number>
+    <!-- COMMENT #4 -->
+    <phone-number type="cell">555-CELL</phone-number>
+    <UNMAPPED_ELEMENT_5/>
+    <!-- COMMENT #5 -->
+</customer>

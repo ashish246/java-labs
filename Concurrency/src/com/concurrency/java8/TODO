@@ -1,0 +1,15 @@
+Consider the following enhancements to the Java Concurrency Utilities:
+
+1. Improved ConcurrentHashMap class: The java.util.concurrent.ConcurrentHashMap class has been improved to make it and classes that use it more useful as caches. New methods include sequential and parallel bulk operations (forEach, search, and reduce) methods.
+
+2. Fence intrinsics: This update exposes memory fence controls into Java code so that the Java Concurrency Utilities APIs can more accurately and efficiently control memory ordering and bounding. This task is accomplished by adding "three memory-ordering intrinsics to the sun.misc.Unsafe class."
+
+3. Changes to the Fork/Join framework: The ForkJoinPool and ForkJoinTask classes have been updated to improve performance and supply additional functionality. "New features include support for completion-based designs that are often most appropriate for IO-bound usages, among others." Additionally, a new CountedCompleter class that subclasses ForkJoinTask and provides a completion action that's "performed when triggered and there are no remaining pending actions" has been introduced.
+
+4. New CompletableFuture class: The new java.util.concurrent.CompletableFuture class is a "Future that may be explicitly completed (setting its value and status), and may include dependent functions and actions that trigger upon its completion." This class is associated with the new java.util.concurrent.CompletableFuture.AsynchronousCompletionTask interface and the new java.util.concurrent.CompletionException exception. Check out Tomasz Nurkiewicz's Java 8: Definitive guide to CompletableFuture blog post for an extensive tutorial on how to use CompletableFuture.
+
+5. New StampedLock class: The new java.util.concurrent.locks.StampedLock class is "a capability-based lock with three modes for controlling read/write access." Check out Dr. Heinz Kabutz's Phaser and StampedLock Concurrency Synchronizers video presentation to learn about StampedLock. A PDF file of this presentation is also available.
+
+6. Parallel array sorting: The java.util.Arrays class has been augmented with several parallel-prefixed class methods (such as void parallelSort(int[] a)) that leverage the Fork/Join framework to sort arrays in parallel.
+
+7. Scalable updatable variables: The java.util.concurrent.atomic package includes new DoubleAccumulator, DoubleAdder, LongAccumulator, and LongAdder classes that address a scalability problem in the context of maintaining a single count, sum, or some other value with the possibility of updates from many threads. These new classes "internally employ contention-reduction techniques that provide huge throughput improvements as compared to atomic variables. This is made possible by relaxing atomicity guarantees in a way that is acceptable in most applications."

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Manifest" type="ManifestType"/>
+  <xs:complexType name="attributesType">
+    <xs:sequence>
+      <xs:element type="xs:float" name="amount"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="featuresType">
+    <xs:sequence>
+      <xs:element type="attributesType" name="attributes"/>
+      <xs:element type="xs:string" name="type"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="item_reference"/>
+      <xs:element type="xs:byte" name="weight"/>
+      <xs:element type="xs:byte" name="height"/>
+      <xs:element type="xs:string" name="product_id"/>
+      <xs:element type="xs:string" name="tracking_details"/>
+      <xs:element type="xs:byte" name="width"/>
+      <xs:element type="featuresType" name="features"/>
+      <xs:element type="xs:byte" name="length"/>
+      <xs:element name="contains_dangerous_goods">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="true"/>
+            <xs:enumeration value="false"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lodgementType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="business_name"/>
+      <xs:element type="xs:string" name="suburb"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="state"/>
+      <xs:element name="lines" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Corporate HQ"/>
+            <xs:enumeration value="123 Fake St"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:short" name="postcode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="destinationType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="business_name"/>
+      <xs:element type="xs:string" name="delivery_instructions"/>
+      <xs:element type="xs:string" name="suburb"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="state"/>
+      <xs:element type="xs:string" name="lines"/>
+      <xs:element type="xs:short" name="postcode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="shipmentsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="customer_reference_1"/>
+      <xs:element type="xs:string" name="customer_reference_2"/>
+      <xs:element type="itemsType" name="items" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="lodgementType" name="lodgement"/>
+      <xs:element type="xs:string" name="shipment_reference"/>
+      <xs:element type="destinationType" name="destination"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ManifestType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="order_reference"/>
+      <xs:element type="shipmentsType" name="shipments"/>
+      <xs:element type="xs:int" name="contract_id"/>
+      <xs:element type="xs:string" name="payment_method"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,20 @@
+
+{
+    "name":"Jane Doe",
+    "address":{
+        "type":1,
+        "street":"1 A Street",
+        "city":null,
+        "verified":false
+    },
+    "phone-numbers":[
+        {
+            "number":"555-1111",
+            "extension":"123"
+        },
+        {
+            "number":"555-2222",
+            "extension":null
+        }
+    ]
+}

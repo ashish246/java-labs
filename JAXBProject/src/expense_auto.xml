@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expenseReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="expense.xsd">
+  <user>
+    <userName>userName</userName>
+  </user>
+  <items>
+    <item>
+      <itemName>itemName</itemName>
+      <purchasedOn>purchasedOn</purchasedOn>
+      <amount>0.0</amount>
+    </item>
+  </items>
+</expenseReport>

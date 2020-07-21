@@ -1,0 +1,100 @@
+
+{
+"contract_id":"0007032406",
+"payment_method":"CREDIT_CARD",
+"order_reference":"OPTIONAL NEW Order Reference",
+"shipments":[
+{
+  "shipment_reference":"OPTIONAL NEW Shipment Reference",
+  "customer_reference_1":"refence text 1",
+   "customer_reference_2":"refence text 2",
+   "lodgement":{
+      "name":"ATTN: Steve",
+      "business_name":"Hello World Pty Ltd",
+      "lines":[
+         "Corporate HQ",
+         "123 Fake St"
+      ],
+      "suburb":"Port Melbourne",
+      "postcode":"2170",
+      "state":"NSW"
+   },
+   "destination":{
+      "name":"ATTN: Paul",
+	  "business_name":"Hello World Pty Ltd",
+            "delivery_instructions":"delivery instruction text",
+      "lines":[
+         "111 Bourke Street"
+      ],
+      "suburb":"Melbourne",
+      "postcode":"2170",
+      "state":"NSW"
+   },
+   "items":[
+      {
+		"item_reference":"OPTIONAL NEW Item Reference",
+		"tracking_details":
+			{
+				
+			},
+        "length":5,
+         "height":5,
+         "width":5,
+         "weight":20,
+         "features":[
+            {
+               "type":"TRANSIT_COVER",
+               "attributes":{
+                  "amount":"3000.00"
+               }
+            }
+         ],
+         "product_id":"T28S",
+		 "contains_dangerous_goods": true
+      },
+	   {
+		"item_reference":"OPTIONAL NEW Item Reference",
+		"tracking_details":
+			{
+				
+			},
+        "length":5,
+         "height":5,
+         "width":5,
+         "weight":20,
+         "features":[
+            {
+               "type":"TRANSIT_COVER",
+               "attributes":{
+                  "amount":"3000.00"
+               }
+            }
+         ],
+         "product_id":"T28S",
+		 "contains_dangerous_goods": false
+      },
+ {
+		"item_reference":"OPTIONAL NEW Item Reference",
+		"tracking_details":
+			{
+				
+			},
+        "length":5,
+         "height":5,
+         "width":5,
+         "weight":20,
+         "features":[
+            {
+               "type":"TRANSIT_COVER",
+               "attributes":{
+                  "amount":"3000.00"
+               }
+            }
+         ],
+         "product_id":"T28S",
+		 "contains_dangerous_goods": true
+      }
+   ]
+}
+]
+}

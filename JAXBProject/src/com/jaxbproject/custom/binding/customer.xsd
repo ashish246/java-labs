@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="customer" type="customer"/>
+    <xsd:complexType name="customer">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" minOccurs="0"/>
+            <xsd:choice>
+                <xsd:element name="address" type="address"/>
+                <xsd:element name="phone-number" type="phoneNumber"/>
+                <xsd:element name="note" type="xsd:string"/>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="address">
+        <xsd:sequence>
+            <xsd:element name="city" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="street" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="phoneNumber">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="expenseReport" type="expenseReportType"/>
+  <xs:complexType name="userType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="userName"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="itemName"/>
+      <xs:element type="xs:string" name="purchasedOn"/>
+      <xs:element type="xs:float" name="amount"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemsType">
+    <xs:sequence>
+      <xs:element type="itemType" name="item"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="expenseReportType">
+    <xs:sequence>
+      <xs:element type="userType" name="user"/>
+      <xs:element type="itemsType" name="items"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

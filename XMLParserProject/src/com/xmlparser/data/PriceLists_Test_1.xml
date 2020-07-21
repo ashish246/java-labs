@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enfinity xsi:schemaLocation="http://www.intershop.com/xml/ns/enfinity/6.3/bc_pricing/impex bc_pricing.xsd" xmlns="http://www.intershop.com/xml/ns/enfinity/6.3/bc_pricing/impex" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dt="http://www.intershop.com/xml/ns/enfinity/6.5/core/impex-dt">
+<product-price-list id="0006736437" priceType="ES_SalePrice" import-mode="UPDATE">
+<display-name xml:lang="en-AU">14DegreesWineLogistics_0006736437_TESTING123</display-name>
+<enabled>true</enabled>
+<priority>2.0</priority>
+<valid-from>2014-01-31T18:30:00+05:30</valid-from>
+<valid-to>2015-01-30T18:30:00+05:30</valid-to>
+<user-groups>
+</user-groups>
+<product-price-list-entry sku="T2SS_TRANSIT_COVER">
+<price-scale-table currency="AUD" type-code="1">
+<valid-from>2014-01-31T18:30:00+05:30</valid-from>
+<valid-to>2015-01-30T18:30:00+05:30</valid-to>
+<price-scale-entries>
+<fixed-price-entry quantity="MED" unit="">
+<value>1.75</value>
+</fixed-price-entry>
+</price-scale-entries>
+</price-scale-table>			
+</product-price-list-entry>
+<product-price-list-entry sku="W5AUQLD9">
+<price-scale-table currency="AUD" type-code="1">
+<valid-from>2014-01-31T18:30:00+05:30</valid-from>
+<valid-to>2015-01-30T18:30:00+05:30</valid-to>
+<price-scale-entries>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>5.0</value>
+<custom-attributes>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">2.25</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.25</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>6.0</value>
+<custom-attributes>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.3</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">2.7</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>7.0</value>
+<custom-attributes>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">3.15</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.35</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>8.0</value>
+<custom-attributes>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">3.6</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.4</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>1.0</value>
+<custom-attributes>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.05</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">0.45</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>2.0</value>
+<custom-attributes>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.1</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">0.9</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>3.0</value>
+<custom-attributes>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.15</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">1.35</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>4.0</value>
+<custom-attributes>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.2</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">1.8</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>5.0</value>
+<custom-attributes>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">2.25</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.25</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+<fixed-price-entry weightTranslation="WT_CP2" quantity="MED" unit="">
+<value>6.0</value>
+<custom-attributes>
+<custom-attribute name="cubingConversionFactor" dt:dt="decimal">250</custom-attribute>
+<custom-attribute name="ctcMaxAmount" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="subsequentPrice" dt:dt="decimal">2.7</custom-attribute>
+<custom-attribute name="maxArticleCount" dt:dt="int">0</custom-attribute>
+<custom-attribute name="cubingFactor" dt:dt="decimal">1</custom-attribute>
+<custom-attribute name="currency" dt:dt="string">AUD</custom-attribute>
+<custom-attribute name="sapConfigProfile" dt:dt="string">W5_01022014</custom-attribute>
+<custom-attribute name="volumetricPricing" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="transitCoverRate" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="returnDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="labelType" dt:dt="string">P01</custom-attribute>
+<custom-attribute name="chargeType" dt:dt="string">W</custom-attribute>
+<custom-attribute name="weightTranslation" dt:dt="string">WT_CP2</custom-attribute>
+<custom-attribute name="material" dt:dt="string">B34</custom-attribute>
+<custom-attribute name="secondDeliveryFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="weightPrice" dt:dt="decimal">0.3</custom-attribute>
+<custom-attribute name="chargeCode" dt:dt="string">W5</custom-attribute>
+<custom-attribute name="afterHoursFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="ctcServiceFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="transitCoverMax" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="destinationZoneTranslation" dt:dt="string">DZ505D</custom-attribute>
+<custom-attribute name="deliveryTimetable" dt:dt="string">00</custom-attribute>
+<custom-attribute name="pickupRequestFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="additionalConsignmentFee" dt:dt="decimal">0</custom-attribute>
+<custom-attribute name="consolidateConsignment" dt:dt="boolean">false</custom-attribute>
+<custom-attribute name="lodgementZoneTranslation" dt:dt="string">LZ515D</custom-attribute>
+</custom-attributes>
+</fixed-price-entry>
+</price-scale-entries>
+</price-scale-table>			</product-price-list-entry>
+</product-price-list>
+</enfinity>
